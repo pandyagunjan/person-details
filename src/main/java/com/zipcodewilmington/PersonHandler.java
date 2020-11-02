@@ -1,7 +1,7 @@
 package com.zipcodewilmington;
 
 /**
- * Created by leon on 1/24/18.
+ * Updated by Gunjan 11/02/2020
  */
 public class PersonHandler {
     private final Person[] personArray;
@@ -69,13 +69,12 @@ public class PersonHandler {
             // begin loop
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
-            // end loop
-       // personArray.forEach(i -> tempString.append("\nMy first name is " + personArray[i].getFirstName() + "\nMy last name is " + personArray[i].getLastName()));
-     /*   for(Person personArray : )
-        {
-            tempString.append("\nMy first name is " + pArray[i].getFirstName() + "\nMy last name is " + pArray[i].getLastName());
-        }*/
-        return result;
+          // end loop
+
+        for(Person P1 : personArray)
+          tempString.append("\nMy first name is " + P1.getFirstName() + "\nMy last name is " + P1.getLastName());
+
+        return tempString.toString();
     }
 
 
